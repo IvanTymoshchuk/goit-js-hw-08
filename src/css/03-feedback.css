@@ -3,15 +3,32 @@
   flex-direction: column;
   max-width: 480px;
   padding: 12px;
-  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  box-shadow: -10px -10px 10px #0129f0, 10px 10px 10px #eeff00;
+  background-color: transparent;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+.feedback-form input,button {
+  background-color: transparent;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 2rem 2.25rem;
+  height: 58px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  outline: none;
+  color: #f7f7f7;
+  box-shadow: inset -5px -5px 12px #808486, inset 5px 5px 12px #1c2e82;
 }
 
 .feedback-form label {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  color: #f7f7f7;
+  font-style: italic;
 }
 
 .feedback-form button {
@@ -27,5 +44,9 @@ textarea {
 }
 
 textarea {
+  color: #f7f7f7;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  box-shadow: inset -5px -5px 12px #808486, inset 5px 5px 12px #1c2e82; 
   resize: none;
 }

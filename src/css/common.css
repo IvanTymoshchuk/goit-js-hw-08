@@ -120,6 +120,7 @@ ul {
 }
 
 .main-link {
+  text-decoration: none;
   background: transparent;
   line-height: 42px;
   padding: 0;
