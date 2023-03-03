@@ -31,9 +31,16 @@ function onTextareaInput(e) {
 function populateTextarea() {
   const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
-  if (savedMessage === null) {
-    return;
-  }
-  refs.textarea.value = savedMessage['message'] || '';
-  refs.input.value = savedMessage['email'] || '';
+//   if (savedMessage === null) {
+//     return;
+//   }
+//   refs.textarea.value = savedMessage['message'] || '';
+//   refs.input.value = savedMessage['email'] || '';
+
+  if (savedMessage) {
+    formData = savedMessage;
+    refs.textarea.value = savedMessage.['email'] || "";
+    refs.input.value = savedMessage.['message'] || "";
+  };
+};
 }
