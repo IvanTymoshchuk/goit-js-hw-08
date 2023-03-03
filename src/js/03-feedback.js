@@ -39,8 +39,8 @@ function populateTextarea() {
 
   if (savedMessage) {
     formData = savedMessage;
-    refs.textarea.value = savedMessage.['email'] || "";
-    refs.input.value = savedMessage.['message'] || "";
+    refs.textarea.value = savedMessage['message'] || "";
+    refs.input.value = savedMessage['email'] || "";
   };
 };
 }
