@@ -34,8 +34,8 @@ function populateTextarea() {
   if (savedMessage === null) {
     return;
   }
-  refs.textarea.value = savedMessage['message'];
-  refs.input.value = savedMessage['email'];
+  refs.textarea.value = savedMessage['message'] || '';
+  refs.input.value = savedMessage['email'] || '';
 }
 
 
