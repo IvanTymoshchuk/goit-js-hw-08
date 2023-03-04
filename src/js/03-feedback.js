@@ -36,10 +36,10 @@ function populateTextarea() {
   if (savedMessage === null) {
     return;
   }
-  refs.textarea.value = savedMessage['message'] || '';
-  refs.input.value = savedMessage['email'] || '';
-  formData = savedMessage['email'] || '';
-  formData = savedMessage['message'] || '';
+  refs.textarea.value = savedMessage.message || '';
+  refs.input.value = savedMessage.email || '';
+  formData = savedMessage.email || '';
+  formData = savedMessage.message || '';
 }
 
 // const refs = {
